@@ -13,3 +13,26 @@ body{
     inset: 0;
     margin: auto;
 }
+input {
+	width: 70%;
+    padding: 12px 15px;
+    border: none;
+    background-color: #eee;
+}
+
+button {
+  font-size: 15px;
+	font-weight: bold;
+	padding: 12px 45px;
+	border-radius: 30px;
+	background-color: #FF416C;
+	border: 1px solid #FF416C;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: transform 20ms ease-in;
+}
+
+button:active {
+	transform: scale(0.95);
+}
