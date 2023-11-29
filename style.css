@@ -1,23 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 
 body{
     background: #f6f5f7; 
     font-family: 'Montserrat', sans-serif;
     color: #3E363F;
+ 
 }
-#contenedor {
-    background-color: pink;
-    width: 60vw;
-    height: 50vh;
+
+#contenedor{
+    
+    width: 900px;
+    height: 500px;
+    text-align: center;
+    /* Estas 3 lineas se encargan de centrar el div vertical y horizontalmente */
     position: absolute;
     inset: 0;
     margin: auto;
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+      0 10px 10px rgba(0,0,0,0.22);
+      background-image: url("imagenes/bebe.jpg");
+      background-size: 300px;
+      background-repeat: no-repeat;
+      background-position: bottom ;
+  }
+  
+#calculadora{
+    font-family: 'Carrois Gothic', sans-serif;
+    /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
+    width: 50%;
+    height: 100%;
+    float: left;
+    background:  linear-gradient(#d84897, #08eacc60);
+
+
+   
+}
+
+#detalle{
+    background: rgb(247, 132, 247);
+    /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
+    width: 50%;
+    height: 100%;
+    float: left;
+    color: #0f0f0f;
+    font-family: 'Indie Flower', cursive;
+}
+.contenido{
+    /* Estas tres lineas van a centrar el contenido verticalmente dentro de cada div */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    padding: 40px;
 }
 input {
 	width: 70%;
     padding: 12px 15px;
     border: none;
     background-color: #eee;
+    cursor: pointer;
+    border-radius: 20px;
+    
 }
 
 button {
@@ -36,3 +84,22 @@ button {
 button:active {
 	transform: scale(0.95);
 }
+
+button:hover {
+    background-color:rgb(138, 22, 119);
+    transition: 0.7s;
+}
+#error{
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+
+.resultado{
+    color: #0A81D1;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+    display: none;
+}
+
